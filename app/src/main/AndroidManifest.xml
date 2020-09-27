@@ -10,7 +10,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Course"></activity>
+        <activity android:name=".Frag_join_user"></activity>
+        <activity android:name=".Frag_join_shelter" />
+        <activity android:name=".Course" />
         <activity android:name=".change_infor" />
         <activity
             android:name=".MainActivity_shelter"
