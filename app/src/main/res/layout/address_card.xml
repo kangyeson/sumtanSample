@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="250dp"
     android:layout_height="600dp"
+    xmlns:tools="http://schemas.android.com/tools"
     android:weightSum="10"
     android:orientation="vertical"
     android:padding="5dp"
-    android:background="@drawable/adress_card_border">
+    android:layout_gravity="center"
+    android:background="@drawable/address_card_border">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,7 +46,7 @@
         android:layout_weight="8">
 
         <RadioGroup
-            android:id="@+id/adress1"
+            android:id="@+id/address1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -194,23 +195,14 @@
             android:background="#E7E7E7"
             android:layout_gravity="center"/>
 
-        <RadioGroup
-            android:id="@+id/adress2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:orientation="vertical">
+<!--        <fragment-->
+<!--            android:name="com.example.sample.cardlist_fragment"-->
+<!--            android:id="@+id/address_fragment_place"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="2"-->
+<!--            android:orientation="vertical"/>-->
 
-            <Button
-                android:id="@+id/test"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="test데이터"
-                android:textSize="12sp"
-                android:background="#00FF0000"/>
-
-
-        </RadioGroup>
     </LinearLayout>
 
     <view
@@ -225,7 +217,7 @@
         android:layout_weight="1">
 
         <Button
-            android:id="@+id/adress_card_down"
+            android:id="@+id/address_card_down"
             android:text="확인"
             android:background="#00FF0000"
             android:layout_width="match_parent"
